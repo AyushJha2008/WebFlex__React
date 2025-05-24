@@ -15,11 +15,21 @@
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
+    top: 0;
     font-size: 14px;
     color: white;
-    /* background-color: #0b0c2a; */
-    z-index: 1;
+    background-color: transparent;
+    transition: top 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+.navbar.scrolled{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.navbar.hidden{
+    top: -88px
+}
+
 .navbar-left{
     display: flex;
     align-items: center;
@@ -52,6 +62,7 @@
     background-color: rgb(229, 143, 172);
     color: black;
     display: none;
+    margin-right: 30px;
 }
 .dropdown p{
     padding: 4px;

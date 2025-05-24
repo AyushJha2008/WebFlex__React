@@ -1,14 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/banner.png'
 import search_icon from '../../assets/search.png'
 import bell_icon from '../../assets/bell.png'
 import prof_icon from '../../assets/profile.png'
-import drop_icon from '../../assets/drop.png'
 
 const Navbar = () => {
+
+  const [hidden, setHidden] = useState(false);
+  const [lastscroll, setLastscroll] = useState(0);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(()=>{
+    const handleScroll = () =>{
+      const currentScroll = window.scrollY;
+  
+      if(currentScroll > lastscroll && currentScroll > 100){
+        setHidden(true);
+      } else{
+        setHidden(false);
+      }
+  
+      setLastscroll(currentScroll);
+      setScrolled(currentScroll >50)
+    };
+
+    window.addEventListener('scroll', handleScroll)
+    return() => window.removeEventListener('scroll',handleScroll);
+  }, [lastscroll]);
+
   return (
-    <div className='navbar'>
+    <div className= {`navbar ${hidden? 'hidden' : ''} ${scrolled?'scrolled':''}`}>
         <div className="navbar-left">
           <img src={logo} />
           <ul>
@@ -32,6 +54,7 @@ const Navbar = () => {
           </div>
         </div>
     </div>
+
   )
 }
 

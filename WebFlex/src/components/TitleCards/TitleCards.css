@@ -3,7 +3,7 @@
 }
 .titleCards h2{
     padding: 1rem 1rem;
-    color: rgb(243, 161, 175);
+    color: pink;
     font-weight: bolder;
 }
 .cardList{
@@ -28,7 +28,7 @@
     bottom: 10px;
     left: 10px;
     color: #000000;
-    background-color: rgb(248, 127, 147);
+    background-color: pink;
     height: 25px;
     padding: 3px 5px;
     margin-bottom: 15px;
