@@ -5,6 +5,7 @@
     padding: 1rem 1rem;
     color: pink;
     font-weight: bolder;
+    margin-top: 2rem;
 }
 .cardList{
     display: flex;
@@ -32,7 +33,7 @@
     height: 25px;
     padding: 3px 5px;
     margin-bottom: 15px;
-    font-weight: 800;
+    font-weight: 700;
 }
 .pName{
     padding: 5px;
