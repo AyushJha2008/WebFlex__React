@@ -4,6 +4,7 @@ import logo from '../../assets/banner.png'
 import search_icon from '../../assets/search.png'
 import bell_icon from '../../assets/bell.png'
 import prof_icon from '../../assets/profile.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -46,7 +47,9 @@ const Navbar = () => {
           <p>Children</p>
           <img src={bell_icon} className='icon' />
           <div className='navbar-profile'>
+            <Link to="/login">
             <img src={prof_icon} className='profile' />
+            </Link>
             {/* <img src={drop_icon} /> */}
             <div className="dropdown">
               <p>Sign out</p>
