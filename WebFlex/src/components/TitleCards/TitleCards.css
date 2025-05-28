@@ -1,0 +1,40 @@
+.titleCards{
+    scroll-snap-align: start;
+}
+.titleCards h2{
+    padding: 1rem 1rem;
+    color: pink;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+.cardList{
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+.cardList img{
+    width: 200px;
+    height: 300px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card{
+    position: relative;
+}
+.pName p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000000;
+    background-color: pink;
+    height: 25px;
+    padding: 3px 5px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.pName{
+    padding: 5px;
+}

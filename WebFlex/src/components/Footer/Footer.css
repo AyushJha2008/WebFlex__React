@@ -1,0 +1,31 @@
+.footer{
+    max-width: 100%;
+}
+.footer-icons{
+    display: flex;
+    gap: 1.4rem;
+    margin: 2rem 0;
+    padding: 0 8%;
+}
+.footer-icons img{
+    cursor: pointer;
+    width: 30px;
+}
+.footer-grid{
+    margin-bottom: 30px;
+    padding: 0 8%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+    color: pink;
+    font-weight: 700;
+    cursor: pointer;
+}
+.copy-text{
+    font-size: large;
+    background-color: pink;
+    color: rgb(23, 3, 88);
+    font-weight: bold;
+    padding: 0.5rem 40%;
+}
